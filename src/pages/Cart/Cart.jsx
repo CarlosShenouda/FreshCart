@@ -10,7 +10,7 @@ export default function Cart() {
     const { cartInfo, isLoading } = useContext(CartContext);
 
 const numOfCartItems = cartInfo?.numOfCartItems;
-const products = cartInfo?.data?.products;
+const products = cartInfo?.data?.products || [];
 const totalCartPrice = cartInfo?.data?.totalCartPrice;
 
     if(isLoading){
@@ -111,3 +111,4 @@ const totalCartPrice = cartInfo?.data?.totalCartPrice;
     </>
   );
 }
+
