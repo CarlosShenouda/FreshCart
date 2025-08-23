@@ -28,7 +28,9 @@ const {isLoading,products} =  useContext(ProductsContext);
   return <Loading/>
  }
 
-const deals = products.filter((product) => product.priceAfterDiscount).slice(11, 16);
+const deals = (products || [])
+    .filter((product) => product.priceAfterDiscount)
+    .slice(11, 16);
 
   return (
     <>
@@ -72,3 +74,4 @@ const deals = products.filter((product) => product.priceAfterDiscount).slice(11,
     </>
   );
 }
+
