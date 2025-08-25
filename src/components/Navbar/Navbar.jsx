@@ -11,6 +11,7 @@ import {
   faBolt,
   faCartShopping,
   faChevronDown,
+  faHouse,
   faEllipsis,
   faMagnifyingGlass,
   faPerson,
@@ -448,4 +449,5 @@ const {cartInfo ,isLoading} = useContext(CartContext)
     </>
   );
 }
+
 
