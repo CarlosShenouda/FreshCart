@@ -143,19 +143,7 @@ const {cartInfo ,isLoading} = useContext(CartContext)
                     <h4 className="text-sm pt-1">Cart</h4>
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to={`account`}
-                    className={({ isActive }) => {
-                      return `${
-                        isActive ? "text-primary-600" : ""
-                      } flex flex-col items-center space-y-1.5 hover:text-primary-500 transition-colors duration-300`;
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faUser} className="text-xl" />
-                    <h4 className="text-sm">Account</h4>
-                  </NavLink>
-                </li>
+                
                {token ?<li onClick={logOut}>
                   <NavLink
                     to={`logout`}
@@ -379,7 +367,7 @@ const {cartInfo ,isLoading} = useContext(CartContext)
                 </li>
                 <li className="">
                   <NavLink
-                    to={`account`}
+                    to={`/`}
                     onClick={toggleMenu}
                     className={({ isActive }) => {
                       return `${
@@ -387,8 +375,8 @@ const {cartInfo ,isLoading} = useContext(CartContext)
                       } flex gap-2 items-center   transition-colors duration-300 p-2 rounded-2xl`;
                     }}
                   >
-                    <FontAwesomeIcon icon={faUser} className="text-xl" />
-                    <h4 className="text-sm">Account</h4>
+                    <FontAwesomeIcon icon={faHouse} className="text-xl" />
+                    <h4 className="text-sm">Home</h4>
                   </NavLink>
                 </li>
               </ul>
@@ -460,3 +448,4 @@ const {cartInfo ,isLoading} = useContext(CartContext)
     </>
   );
 }
+
