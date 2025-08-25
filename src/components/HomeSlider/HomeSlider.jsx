@@ -18,8 +18,8 @@ export default function HomeSlider() {
                 <h2 className="text-2xl font-bold">Fresh products delivered <br /> to your door</h2>
                 <p>Get 20% off for your first order</p>
                 <div className="space-x-3">
-                <button className="btn bg-white hover:bg-gray-100/95 text-primary-500 border-2 border-white">Shop now</button>
-                    <button className="btn text-white hover:text-primary-600 hover:bg-white bg-transparent border-2 border-white">View deals</button>
+               <Link to={`/featuredProducts`} className="btn bg-white hover:bg-gray-100/95 text-primary-500 border-2 border-white">Shop now</Link>
+                    <Link to={`/homeDeals`} className="btn text-white hover:text-primary-600 hover:bg-white bg-transparent border-2 border-white">View deals</Link>
                 </div>
             </div>
         </div>
@@ -33,8 +33,8 @@ export default function HomeSlider() {
                 <h2 className="text-2xl font-bold">Fresh products delivered <br /> to your door</h2>
                 <p>Get 20% off for your first order</p>
                 <div className="space-x-3">
-                <button className="btn bg-white hover:bg-gray-100/95 text-primary-500 border-2 border-white">Shop now</button>
-                    <button className="btn text-white hover:text-primary-600 hover:bg-white bg-transparent border-2 border-white">View deals</button>
+               <Link to={`/featuredProducts`} className="btn bg-white hover:bg-gray-100/95 text-primary-500 border-2 border-white">Shop now</Link>
+                    <Link to={`/homeDeals`} className="btn text-white hover:text-primary-600 hover:bg-white bg-transparent border-2 border-white">View deals</Link>
                 </div>
             </div>
         </div>
@@ -48,8 +48,8 @@ export default function HomeSlider() {
                 <h2 className="text-2xl font-bold">Fresh products delivered <br /> to your door</h2>
                 <p>Get 20% off for your first order</p>
                 <div className="space-x-3">
-                <button className="btn bg-white hover:bg-gray-100/95 text-primary-500 border-2 border-white">Shop now</button>
-                    <button className="btn text-white hover:text-primary-600 hover:bg-white bg-transparent border-2 border-white">View deals</button>
+                <Link to={`/featuredProducts`} className="btn bg-white hover:bg-gray-100/95 text-primary-500 border-2 border-white">Shop now</Link>
+                    <Link to={`/homeDeals`} className="btn text-white hover:text-primary-600 hover:bg-white bg-transparent border-2 border-white">View deals</Link>
                 </div>
             </div>
         </div>
@@ -61,3 +61,4 @@ export default function HomeSlider() {
   
   </>
 }
+
