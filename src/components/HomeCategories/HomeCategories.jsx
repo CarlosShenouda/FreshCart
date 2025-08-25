@@ -39,7 +39,7 @@ export default function HomeCategories() {
               categories.map((category) => (
                 <Link
                   key={category._id}
-                  to={`/categories/${category._id}`}
+                  to={`/`}
                   className="card cursor-pointer p-4 flex flex-col items-center justify-center shadow-lg rounded-2xl hover:shadow-2xl transition-shadow duration-300"
                 >
                   <img
@@ -61,3 +61,4 @@ export default function HomeCategories() {
     </>
   );
 }
+
