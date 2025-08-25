@@ -1,7 +1,6 @@
 import {
   faEnvelope,
   faHeart,
-  faUser,
 } from "@fortawesome/free-regular-svg-icons";
 import {
   faArrowRightFromBracket,
@@ -11,8 +10,8 @@ import {
   faBolt,
   faCartShopping,
   faChevronDown,
-  faHouse,
   faEllipsis,
+  faHouse,
   faMagnifyingGlass,
   faPerson,
   faPersonDress,
@@ -144,7 +143,19 @@ const {cartInfo ,isLoading} = useContext(CartContext)
                     <h4 className="text-sm pt-1">Cart</h4>
                   </NavLink>
                 </li>
-                
+                {/* <li>
+                  <NavLink
+                    to={`account`}
+                    className={({ isActive }) => {
+                      return `${
+                        isActive ? "text-primary-600" : ""
+                      } flex flex-col items-center space-y-1.5 hover:text-primary-500 transition-colors duration-300`;
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faUser} className="text-xl" />
+                    <h4 className="text-sm">Account</h4>
+                  </NavLink>
+                </li> */}
                {token ?<li onClick={logOut}>
                   <NavLink
                     to={`logout`}
@@ -449,5 +460,3 @@ const {cartInfo ,isLoading} = useContext(CartContext)
     </>
   );
 }
-
-
