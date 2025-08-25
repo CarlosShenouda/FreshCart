@@ -7,6 +7,8 @@ import "swiper/css/autoplay";
 import slider1 from "../../assets/imgs/slider-1.webp";
 import slider2 from "../../assets/imgs/slider-2.webp";
 import slider3 from "../../assets/imgs/slider-3.webp";
+import { Link } from "react-router";
+
 
 export default function HomeSlider() {
   return <>
@@ -61,4 +63,5 @@ export default function HomeSlider() {
   
   </>
 }
+
 
